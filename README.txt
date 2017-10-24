@@ -1,6 +1,6 @@
 
 TITLE: 
-Valet - Fully Responsive Free HTML5 template
+Magazine - Blog Free Responsive HTML5 template
 
 AUTHOR:
 DESIGNED & DEVELOPED by FREEHTML5.co
@@ -27,6 +27,9 @@ http://modernizr.com/
 Google Fonts
 https://www.google.com/fonts/
 
+Icomoon
+https://icomoon.io/app/
+
 Respond JS
 https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
 
@@ -38,24 +41,3 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 Demo Images:
 http://unsplash.com
-
-Magnific Popup:
-http://dimsemenov.com/plugins/magnific-popup/
-
-Themify Icons:
-https://themify.me/themify-icons
-
-Superfish
-http://users.tpg.com.au/j_birch/plugins/superfish/
-
-Hover Intent
-http://cherne.net/brian/resources/jquery.hoverIntent.html
-
-Easy Responsive Tabs to Accordion
-https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion
-
-Magnific Popup
-http://dimsemenov.com/plugins/magnific-popup/
-
-Owl Carousel
-http://www.owlcarousel.owlgraphic.com/
