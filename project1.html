@@ -168,7 +168,7 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 								Machine Learning Nanodegree program I participated in. </p>
 
 			</div>
-						<div class="col-lg-4 animate-box">
+<!--						<div class="col-lg-4 animate-box"> -->
 							<div class="fh5co-highlight right">
 								<center><figure>
 									<img src="images/Brittany_02625.jpg" width='160', height='160'>
@@ -181,11 +181,11 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
 							-->
 						</div>
-						</div>
+	<!--					</div> -->
 					</div>
 
 					<div class="row rp-b">
-						<div class="col-md-12 animate-box">
+	<!--					<div class="col-md-12 animate-box">  -->
 								<div class="fh5co-highlight right">
 
 								<center><figure>
@@ -209,7 +209,7 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 							</blockquote>
 						-->
 							</div>
-						</div>
+		<!--				</div>  -->
 					</div>
 <!--
 					<div class="row rp-b">
@@ -228,7 +228,7 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 
 
 					<div class="row">
-						<div class="col-md-12 animate-box">
+
 							<h2>Step 1: Dataset - Break dataset into Training, Testing, and Validation sets</h2>
 							<p> I use the dog dataset from
 									<a href="https://github.com/udacity/dog-project" target="_blank">Udacity</a>
@@ -245,12 +245,10 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 								for us as humans to separate the dogs in these images from everything else, it is not
 								super-trivial to train a Neural Network to do the same. However, with a little work,
 								 our model could figure out how!</p>
-						</div>
-						<div class="col-md-12 animate-box">
 							<figure>
 								<img src="images/display.png" alt="Free HTML5 Bootstrap Template by FREEHTML5.co" class="img-responsive">
 							</figure>
-						</div>
+
 						<!--
 						<div class="col-md-4 animate-box">
 							<figure>
@@ -265,7 +263,7 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 							</figure>
 						</div>
 					-->
-						<div class="col-md-12 animate-box">
+
 							<h2>Step 2: Create a Convolutional Neural Network (CNN) to classify Dog Breeds (from Scratch)</h2>
 							<p>With 133 dog breeds in my sample, random chance says that guessing the correct breed has
 								a probability of less than 1%. Thus, as long as the accuracy is higher than 1%,
@@ -291,21 +289,21 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 									converts that image into the proper 4D tensor format to feed into our CNN. It
 									converts the image information (pixel value) into numpy arrays, and resizes each
 									array to make them all uniformly 224 x 224 pixels.  </p>
-									<div class="col-md-12 animate-box">
+
 									<center><figure>
 										<img src="images/ex1/ex1.001.jpeg" width="90%">
 									</figure></center>
-								</div>
+
 					<!--				<figure>
 										<img src="images/ex1/ex1.002.jpeg">
 									</figure> -->
 									<p>Then, when split into 3
 									color channels, each image is represented by a 3D array (224, 224, 3).</p>
-									<div class="col-md-12 animate-box">
+
 									<center><figure>
 										<img src="images/ex1/ex1.002.jpeg" width="90%">
 									</figure></center>
-								</div>
+
 									<p> Next,
 									an extra dimension is added to the 3D array to allow for multiple images (samples)
 									to be processed. Thus, the images are handled as 4D tensors. The returned tensor
@@ -322,9 +320,9 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 								<p> Finally, I rescale the images by dividing every pixel in every image by 255,
 									which changes the range of each image from 0-255 into 0-1.
 							</p>
-						</div>
+
 					</div>
-					<div class="col-md-12 animate-box">
+
 						<h3>Step 2-2. Define the CNN model architecture</h3>
 						<br>
 						<h4> <b>Why CNNs?</b> </h4>
@@ -349,8 +347,7 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 										<img src="images/cnn.jpeg" width="90%">
 								<figcaption>(Top) Regular Neural Network
 									(Bottom) CNN. (<b> Source :</b> http://cs231n.github.io/convolutional-networks/#overview)</figcaption></figure></center>
-					</div>
-					<div class="col-md-12 animate-box">
+
 						<h4><b>Design of CNN</b></h4>
 						<p>A CNN consists of multiple layers, which include
 							convolutional, pooling, and some fully connected layers
@@ -415,8 +412,7 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 					 <p>Note that the number of parameters is large, but not prohibitively large
 						  (regular neural networks could easily reach millions of parameters).
 						  </p>
-					 </div>
-					 <div class="col-md-12 animate-box">
+
 						 <h3>Step 2-3. Loss function </h3>
 						 <br>
 <p>
@@ -477,8 +473,6 @@ But, can we accurately determine a dog's breed using machine learning?</p>
 							is around 2.4%, which is just a little better than random guessing,
 							and it's not great.</p>
 
-					</div>
-					<div class="col-md-12 animate-box">
 						<h2>Step 3: Using Transfer Learning</h2>
 
 						<h3>Why Transfer Learning?</h3>
@@ -605,8 +599,7 @@ when using VGG16 and VGG19 as the pre-trained foundation.</p>
 						<img src="images/misun.png" width="70%" style="border: 3px solid #E09938;">
 						<figcaption>This is a photo of my dog! Yeah. The model got it!!</figcaption>
 						</figure></center>
-				</div>
-				<div class="col-md-12 animate-box">
+
 					<h2>Step 4: Apply the Model to predict dog breed</h2>
 
 								<h3>Mis-predicted dogs</h3>
@@ -698,8 +691,7 @@ when using VGG16 and VGG19 as the pre-trained foundation.</p>
 							cases as new entries in our training and validation data if we want
 							to do a better job of predicting those mixed-breed cases.
 					</p>
-				</div>
-				<div class="col-md-12 animate-box">
+
 					<h2>Summary and Future work.</h2>
 					<p>I trained more than 8,000 dog images with 133 different breeds to predict their dog breed automatically
 						using artificial intelligence.
@@ -715,8 +707,7 @@ when using VGG16 and VGG19 as the pre-trained foundation.</p>
 					<center><figure>
 						<img src="images/poodle.jpg" width="50%">
 						</figure></center>
-				</div>
-				<div class="col-md-12 animate-box">
+
 					<h3>Reference</h3>
 					<ul>
 						<li><a href="https://www.udacity.com/">Udacity Machine Learning Nanodegree program</a></li>
@@ -733,7 +724,6 @@ when using VGG16 and VGG19 as the pre-trained foundation.</p>
 									Transfer learning & The art of using Pre-trained Models in Deep Learning by Dishashree Gupta</a></li>
 					</ul>
 
-				</div>
 			</article>
 		</div>
 	</div>
